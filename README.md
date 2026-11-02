@@ -1,4 +1,4 @@
-# claude-reply-review
+# claude-say-what
 
 A [Claude Code](https://code.claude.com) hook that checks each reply Claude writes for clarity, asks Claude to rewrite
 replies you couldn't follow, and gives long replies a short summary that is shown under the reply and read aloud.
@@ -6,6 +6,8 @@ replies you couldn't follow, and gives long replies a short summary that is show
 Claude often understands its own reply because it knows its reasoning and the output of the commands it ran. You see
 only the text. This hook has a second Claude model read each reply with only what you see. If part of the reply can't
 be followed from that, Claude is asked to write a clearer one.
+
+This is an unofficial tool. It is not made or endorsed by Anthropic.
 
 ## What it does
 
@@ -45,9 +47,9 @@ The reviewer judges only whether you can follow a reply, not whether it is corre
 ## Install
 
 ```bash
-git clone https://github.com/dmalhotra/claude-reply-review.git
+git clone https://github.com/dmalhotra/claude-say-what.git
 mkdir -p ~/.claude/hooks
-cp claude-reply-review/review-reply.py claude-reply-review/speak-reply.py ~/.claude/hooks/
+cp claude-say-what/review-reply.py claude-say-what/speak-reply.py ~/.claude/hooks/
 ```
 
 Then add the hook to `~/.claude/settings.json`, merged with any `hooks` you already have:
