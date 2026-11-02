@@ -120,3 +120,7 @@ summary call for a rewritten reply took about 4 seconds. Each call uses some of 
   summary note, or accepts the reply.
 - `speak-reply.py`: reads the text it is given aloud with `say`, leaving out code blocks, tables, links and markdown
   symbols. New text stops the text still being read.
+
+## License
+
+Apache License 2.0; see [LICENSE](LICENSE).
